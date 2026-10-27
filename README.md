@@ -20,7 +20,7 @@ portfolio/
 ├── index.html       home page: hero, about, featured projects, skills, timeline, contact
 ├── projects.html    full project list
 ├── style.css        all styles and responsive rules
-├── script.js        navbar, scroll reveal, contribution grid, animations
+├── script.js        navbar, scroll reveal, smooth scrolling
 ├── images/          profile photo
 └── package.json     Vercel Analytics
 ```

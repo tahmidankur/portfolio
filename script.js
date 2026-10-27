@@ -114,51 +114,6 @@
 })();
 
 
-/* ===== COMMIT GRID (decorative) ===== */
-(function buildCommitGrid() {
-  const grid = document.getElementById('commit-grid');
-  if (!grid) return;
-
-  // 52 weeks × 7 days = 364 cells
-  // We make it look like a real contribution pattern:
-  // heavier toward the last 6 months, sparse at start
-  const totalCells = 52 * 7;
-  const fragment   = document.createDocumentFragment();
-
-  const weights = [
-    [0, 50],   // l0 - empty
-    [1, 22],   // l1 - light
-    [2, 14],   // l2 - medium
-    [3, 8],    // l3 - heavy
-    [4, 6],    // l4 - max
-  ];
-
-  function weightedRandom(week) {
-    // Heavier activity in second half of the year
-    const bias = week / 52;
-    const table = [];
-    weights.forEach(([level, base]) => {
-      let w = base;
-      if (level === 0) w = Math.max(5, base - bias * 30);
-      if (level >= 2) w = base + bias * 12;
-      for (let i = 0; i < Math.round(w); i++) table.push(level);
-    });
-    return table[Math.floor(Math.random() * table.length)];
-  }
-
-  for (let week = 0; week < 52; week++) {
-    for (let day = 0; day < 7; day++) {
-      const cell = document.createElement('div');
-      const level = weightedRandom(week);
-      cell.className = `commit-cell l${level}`;
-      fragment.appendChild(cell);
-    }
-  }
-
-  grid.appendChild(fragment);
-})();
-
-
 /* ===== SMOOTH SCROLL for anchor links ===== */
 (function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
