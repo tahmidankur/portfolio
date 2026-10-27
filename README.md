@@ -1,6 +1,6 @@
 # Tahmid Hossain Ankur — Personal Portfolio
 
-My personal portfolio site, live at [tahmidankur.dev](https://tahmidankur.dev). It's plain HTML, CSS and JavaScript with no framework and no build step, deployed on Vercel.
+My personal portfolio site, live at [tahmidankur.dev](https://www.tahmidankur.dev). It's plain HTML, CSS and JavaScript with no framework and no build step, deployed on Vercel.
 
 ## Projects on the site
 
@@ -11,7 +11,7 @@ My personal portfolio site, live at [tahmidankur.dev](https://tahmidankur.dev). 
 | Far Care | One-tap "I'm okay" check-ins for family abroad | [code](https://github.com/tahmidankur/FarCare) · [live](https://far-care.vercel.app) |
 | StudyForge | Study planner with tasks, a Pomodoro timer and progress tracking | [code](https://github.com/tahmidankur/StudyForge) · [live](https://study-forge-ecru.vercel.app) |
 | Fair Share | Android app for splitting chores and expenses with roommates | [code](https://github.com/tahmidankur/Fair-Share-Android) |
-| World Cup 2026 Analysis | pandas, SQLite and SQL analysis of simulated player stats (projects page only) | [code](https://github.com/tahmidankur/fifa-wc2026-analysis) |
+| World Cup 2026 Analysis | pandas, SQLite and SQL analysis of real 2026 World Cup player and match data (projects page only) | [code](https://github.com/tahmidankur/fifa-wc2026-analysis) · [live](https://tahmidankur.github.io/fifa-wc2026-analysis/) |
 
 ## Files
 
