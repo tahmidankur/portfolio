@@ -21,6 +21,7 @@
   --blue-glow:    rgba(56, 189, 248, 0.12);
   --teal:         #2DD4BF;
   --green:        #34D399;
+  --amber:        #FBBF24;
   --border:       #1C2333;
   --border-subtle: #161C27;
 
@@ -855,6 +856,10 @@ a {
   opacity: 1;
 }
 
+.project-card.wide {
+  grid-column: 1 / -1;
+}
+
 .project-card.featured {
   border-color: rgba(124, 58, 237, 0.25);
 }
@@ -923,6 +928,7 @@ a {
 .accent-blue   { color: var(--blue); }
 .accent-teal   { color: var(--teal); }
 .accent-green  { color: var(--green); }
+.accent-amber  { color: var(--amber); }
 
 .project-title {
   font-size: 1.35rem;
