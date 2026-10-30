@@ -1,4 +1,4 @@
-# Tahmid Hossain Ankur — Personal Portfolio
+# Portfolio
 
 My personal portfolio site, live at [tahmidankur.dev](https://www.tahmidankur.dev). It's plain HTML, CSS and JavaScript with no framework and no build step, deployed on Vercel.
 
@@ -15,15 +15,11 @@ My personal portfolio site, live at [tahmidankur.dev](https://www.tahmidankur.de
 
 ## Files
 
-```
-portfolio/
-├── index.html       home page: hero, about, featured projects, skills, timeline, contact
-├── projects.html    full project list
-├── style.css        all styles and responsive rules
-├── script.js        navbar, scroll reveal, smooth scrolling
-├── images/          profile photo
-└── package.json     Vercel Analytics
-```
+- `index.html` - home page (about, featured projects, skills, timeline, contact)
+- `projects.html` - full project list
+- `style.css` - all styles
+- `script.js` - navbar state, mobile menu, scroll reveal
+- `images/` - profile photo
 
 ## Adding a project
 
@@ -33,7 +29,7 @@ Copy one of the `<article class="project-card">` blocks in `index.html` (and `pr
 
 Open `index.html` in a browser, or serve the folder:
 
-```
+```bash
 python3 -m http.server
 ```
 

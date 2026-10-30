@@ -1,8 +1,3 @@
-/* =====================================================
-   TAHMID HOSSAIN ANKUR — Portfolio
-   script.js
-   ===================================================== */
-
 'use strict';
 
 /* ===== NAVBAR: scroll state + active section ===== */
@@ -11,7 +6,6 @@
   const navLinks = document.querySelectorAll('.nav-link[data-section]');
   const sections = [];
 
-  // Collect all sections that nav links point to
   navLinks.forEach(link => {
     const id  = link.dataset.section;
     const el  = document.getElementById(id);
@@ -19,23 +13,15 @@
   });
 
   function updateScrolled() {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
   }
 
   function updateActiveLink() {
-    const scrollY  = window.scrollY;
     const viewH    = window.innerHeight;
     let   current  = null;
 
     sections.forEach(({ id, el }) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top <= viewH * 0.45) {
-        current = id;
-      }
+      if (el.getBoundingClientRect().top <= viewH * 0.45) current = id;
     });
 
     navLinks.forEach(link => {
@@ -71,17 +57,14 @@
     btn.setAttribute('aria-expanded', String(isOpen));
   });
 
-  // Close when a link is clicked
   links.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', close);
   });
 
-  // Close when Escape key pressed
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') close();
   });
 
-  // Close when clicking outside
   document.addEventListener('click', e => {
     if (!btn.contains(e.target) && !links.contains(e.target)) {
       close();
@@ -114,21 +97,6 @@
 })();
 
 
-/* ===== SMOOTH SCROLL for anchor links ===== */
-(function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      const navH   = document.getElementById('navbar')?.offsetHeight || 68;
-      const top    = target.getBoundingClientRect().top + window.scrollY - navH - 8;
-      window.scrollTo({ top, behavior: 'smooth' });
-    });
-  });
-})();
-
-
 /* ===== STAGGER PROJECT CARDS on load ===== */
 (function staggerCards() {
   const cards = document.querySelectorAll('.project-card');
@@ -136,10 +104,3 @@
     card.style.transitionDelay = `${i * 0.08}s`;
   });
 })();
-
-
-/* ===== ACTIVE NAV UNDERLINE INDICATOR (CSS handles it; this just ensures correctness on load) ===== */
-window.addEventListener('load', () => {
-  const scrollEvent = new Event('scroll');
-  window.dispatchEvent(scrollEvent);
-});
