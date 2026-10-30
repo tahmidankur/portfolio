@@ -312,16 +312,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    (function initNavbarScroll() {
-      const navbar = document.getElementById('navbar');
-      if (!navbar) return;
-      function update() {
-        navbar.classList.toggle('scrolled', window.scrollY > 20);
-      }
-      update();
-      window.addEventListener('scroll', update, { passive: true });
-    })();
-  </script>
 </body>
 </html>
