@@ -24,7 +24,7 @@ My personal portfolio site, live at [tahmidankur.dev](https://www.tahmidankur.de
 
 ## Adding a project
 
-Copy one of the `<article class="project-card">` blocks in `index.html` (and `projects.html` if it should be on both pages) and change the text and links. The grid has two columns. A card with the extra `wide` class spans the full row, which helps when the number of cards is odd.
+Copy one of the `<article class="project-card">` blocks in `index.html` (and `projects.html` if it should be on both pages) and change the text and links. The grid has two columns, so every card takes half the row on desktop.
 
 ## Running locally
 
