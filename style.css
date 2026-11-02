@@ -607,6 +607,13 @@ a {
   gap: 1.5rem;
 }
 
+/* an odd card out on the last row sits in the middle */
+.projects-grid > .project-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - 1.5rem) / 2);
+}
+
 .project-card {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -1204,6 +1211,11 @@ a {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid > .project-card:last-child:nth-child(odd) {
+    width: auto;
+    justify-self: stretch;
   }
 
   .skills-grid {
