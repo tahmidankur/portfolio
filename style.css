@@ -622,10 +622,6 @@ a {
   transform: translateY(-2px);
 }
 
-.project-card.wide {
-  grid-column: 1 / -1;
-}
-
 .project-card.featured {
   border-color: rgba(245, 158, 11, 0.25);
 }
