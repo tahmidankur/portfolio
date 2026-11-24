@@ -8,6 +8,8 @@ My personal portfolio site, live at [tahmidankur.dev](https://www.tahmidankur.de
 |---|---|---|
 | SpoofCheck BC | Checks B.C. public bodies' email spoofing protection (SPF, DKIM, DMARC) | [code](https://github.com/tahmidankur/spoofcheck-bc) · [live](https://spoofcheck-bc.vercel.app) |
 | Mini SIEM | Log-based intrusion detection tool (Python, SQLite, Streamlit) | [code](https://github.com/tahmidankur/mini-siem) · [live](https://mini-siem-xup9tgpprnay5uk8fs8kof.streamlit.app) |
+| B.C. Dangerous Goods Incidents | Python, DuckDB and React pipeline for B.C. dangerous goods incident reports, shown on synthetic data | [code](https://github.com/tahmidankur/bc-dg-incidents) · [live](https://bc-dg-incidents-demo.vercel.app) |
+| ZoroFit | Food and workout logger with a chat assistant (FastAPI, React, PWA) | [code](https://github.com/tahmidankur/zorofit) |
 | Divine Mood | Matches your mood to Quran and Bible verses | [code](https://github.com/tahmidankur/DivineMood) · [live](https://divine-mood.vercel.app) |
 | Far Care | One-tap "I'm okay" check-ins for family abroad | [code](https://github.com/tahmidankur/FarCare) · [live](https://far-care.vercel.app) |
 | StudyForge | Study planner with tasks, a Pomodoro timer and progress tracking | [code](https://github.com/tahmidankur/StudyForge) · [live](https://study-forge-ecru.vercel.app) |
